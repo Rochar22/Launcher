@@ -31,7 +31,7 @@ window.configure(bg = "#3B1E4A")
 def run(version,username):
     if version not in versions:
         print("Please, select version")
-    if username == "":
+    elif username == "":
         print("Так-с без аккаунта нельзя")
     else:
         minecraft_launcher_lib.install.install_minecraft_version(versionid=version,
