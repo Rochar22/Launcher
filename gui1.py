@@ -116,7 +116,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: run(entry_1.get(),""),
+    command=lambda: run(entry_1.get(),"User"),
     relief="flat"
 )
 button_1.place(
