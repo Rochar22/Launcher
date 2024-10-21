@@ -12,8 +12,6 @@ import minecraft_launcher_lib
 from uuid import uuid1
 from random_username.generate import generate_username
 
-from gui import entry_4
-
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\user\PycharmProjects\pythonProject2\build\assets\frame1")
 
@@ -31,8 +29,6 @@ window.configure(bg = "#3B1E4A")
 def run(version,username):
     if version not in versions:
         print("Please, select version")
-    elif username == "":
-        print("Так-с без аккаунта нельзя")
     else:
         minecraft_launcher_lib.install.install_minecraft_version(versionid=version,
                                                                 minecraft_directory=minecraft_directory)
