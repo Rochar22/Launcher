@@ -12,6 +12,7 @@ import minecraft_launcher_lib
 from uuid import uuid1
 from random_username.generate import generate_username
 
+
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\user\PycharmProjects\pythonProject2\build\assets\frame1")
 
@@ -20,7 +21,6 @@ versions = [version["id"] for version in minecraft_launcher_lib.utils.get_versio
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
-
 
 window = Tk()
 
@@ -112,7 +112,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: run(entry_1.get(),"User"),
+    command=lambda: run(entry_1.get(),"user"),
     relief="flat"
 )
 button_1.place(
