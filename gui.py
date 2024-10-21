@@ -9,7 +9,6 @@ import pyglet
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage,ttk
 import subprocess
-pyglet.font.add_file("C:/Users/user/PycharmProjects/pythonProject2/Myfont.ttf")
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\user\PycharmProjects\pythonProject2\build\assets\frame0")
 def login(username,password):
@@ -145,7 +144,7 @@ canvas.create_text(
     anchor="nw",
     text="TerrIToriumcraft\n",
     fill="#FFFFFF",
-    font=("Myfont", 40)
+    font=("Inter", 40)
 )
 window.resizable(False, False)
 window.mainloop()
