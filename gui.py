@@ -12,7 +12,7 @@ import subprocess
 UsernameMain = ""
 pyglet.font.add_file("C:/Users/user/PycharmProjects/pythonProject2/Myfont.ttf")
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\user\PycharmProjects\pythonProject2\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"..\build\assets\frame0")
 def login(username,password):
     if username == "" and password == "":
         print("Please, print username and password")
