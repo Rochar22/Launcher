@@ -14,7 +14,7 @@ from random_username.generate import generate_username
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\user\PycharmProjects\pythonProject2\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"..\build\assets\frame1")
 
 minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory().replace('minecraft',"meshlauncher")
 versions = [version["id"] for version in minecraft_launcher_lib.utils.get_version_list()]
